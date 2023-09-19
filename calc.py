@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    print("Hello World")
-    return "hello world"
+    print("To run, you need to type /calc/<operation>/<int:num1>/<int:num2> in url")
+    return "To run, you need to type /calc/operation name/number 1/number 2 in url"
 
 @app.route('/calc/<operation>/<int:num1>/<int:num2>')
 def calculate(operation, num1, num2):

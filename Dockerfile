@@ -1,11 +1,11 @@
 FROM python:3.8
 
-WORKDIR /app
+WORKDIR /calc
 
-COPY requirements.txt /app
+COPY requirements.txt /calc
 RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . /calc
 
 EXPOSE 5000
 
